@@ -1,10 +1,16 @@
 import * as React from "react"
 
+import Navbar from '../components/navbar'
+import Intro from '../components/intro'
+import Footer from '../components/footer'
+
 
 const IndexPage = () => {
   return (
     <div>
-      <h1>Hi, I'm Rick. As a JavaScript developer, I design and develop user-friendly full stack applications.</h1>
+      <Navbar />
+      <Intro />
+      <Footer />
     </div>
   )
 }
