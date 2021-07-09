@@ -2,7 +2,9 @@ import * as React from "react"
 
 import Navbar from '../components/navbar'
 import Intro from '../components/intro'
-import Footer from '../components/footer'
+import Footer from '../components/Footer/footer'
+import About from '../components/about'
+import './index.scss'
 
 
 const IndexPage = () => {
@@ -10,6 +12,7 @@ const IndexPage = () => {
     <div>
       <Navbar />
       <Intro />
+      <About />
       <Footer />
     </div>
   )
