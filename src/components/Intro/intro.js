@@ -4,16 +4,16 @@ import { StaticImage, staticImage } from 'gatsby-plugin-image'
 
 const Intro = () => {
     return (
-        <section>
+        <section className={introStyles.greeting}>
             <StaticImage 
                 src=""
-                alt="headshot"
+                alt=""
             />
             <div>
-                <h1>Hi, I'm Rick.<br/>As a JavaScript developer,<br/>I design and build intuitive full-stack applications.</h1>
+                <h1>Hi, I'm Rick.<br/>As a JavaScript Developer,<br/>I design and build intuitive full-stack web apps.</h1>
             </div>
             <button>
-                Portfolio
+                &#60; View Portfolio  &#47;&#62;
             </button>
         </section>
         

@@ -3,6 +3,7 @@ import "@fontsource/quicksand/300.css"
 
 import Navbar from '../components/Navbar/navbar'
 import Intro from '../components/Intro/intro'
+import ProjectContainer from '../components/ProjectContainer'
 import Footer from '../components/Footer/footer'
 import About from '../components/about'
 import './index.scss'
@@ -12,6 +13,7 @@ const IndexPage = () => {
     <>
       <Navbar />
       <Intro />
+      <ProjectContainer />
       <About />
       <Footer />
     </>
