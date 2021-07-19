@@ -3,13 +3,13 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Grid } from '@material-ui/core'
 
 import ProjectCard from '../ProjectCard'
-import * as containerStyles from './index.scss'
+import * as containerStyles from './index.module.scss'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     container: {
-        paddingLeft:"275px",
-        paddingRight:"100px"
+        paddingLeft:"200px",
+        paddingRight:"200px"
     },
   });
 
@@ -35,9 +35,10 @@ const ProjectContainer = () => {
     return (
         <Grid 
         container
-        spacing={4}
-        alignContent="center"
+        spacing={1}
+        direction="row"
         justifyContent="center"
+        alignItems="center"
         className={classes.container}
         >
         {projectData.site.siteMetadata.projects.map(projectObj => <ProjectCard project={projectObj}/>)}

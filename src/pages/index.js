@@ -1,10 +1,10 @@
 import React from "react"
 import "@fontsource/quicksand/300.css"
 
-import Navbar from '../components/Navbar/navbar'
+import Navbar from '../components/Navbar'
 import Intro from '../components/Intro/intro'
 import ProjectContainer from '../components/ProjectContainer'
-import Footer from '../components/Footer/footer'
+import Footer from '../components/Footer'
 import About from '../components/about'
 import './index.scss'
 

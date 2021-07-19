@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import * as navbarStyles from './navbar.module.scss'
+import * as navbarStyles from './index.module.scss'
 import { 
     MenuIcon,
     MenuLinks,
@@ -13,24 +13,26 @@ const Navbar = () => {
 
     return (
         <header>
-            <Wrapper>
+            <nav className={navbarStyles.nav}>
                 <Logo>R</Logo>
                 <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
                     <div />
                     <div />
                     <div />
                 </MenuIcon>
-            </Wrapper>
-            <MenuLinks nav={nav}>
-                <ul>
-                    <li>
-                        <a to="#">Projects</a>
-                    </li>
-                    <li>
-                        <a to="#">About me</a>
-                    </li>
-                </ul>
-            </MenuLinks>
+            </nav>
+            <div>
+                <MenuLinks nav={nav}>
+                    <ul>
+                        <li>
+                            <a to="#">Projects</a>
+                        </li>
+                        <li>
+                            <a to="#">About me</a>
+                        </li>
+                    </ul>
+                </MenuLinks>
+            </div>
         </header>
     )
 }

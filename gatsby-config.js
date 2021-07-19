@@ -6,7 +6,7 @@ module.exports = {
     projects: [
       {
         title: 'Pantrimonium',
-        description: 'Inventory management tool for tracking the groceries in your fridge, freezer, & pantry',
+        description: 'Track the groceries in your fridge, freezer, & pantry',
         img: '/pantrimonium-logo.png',
         github: 'https://github.com/rickrocero/Pantrimonium',
         link: 'https://pantrimonium.herokuapp.com/',
@@ -14,7 +14,7 @@ module.exports = {
       {
         title: 'Plant Baby',
         description: 'Classified website devoted to house plants',
-        img: '/plant-baby-logo.png',
+        img: '/pantrimonium-logo.png',
         github: 'https://github.com/rickrocero/Plant-Baby-Frontend',
         link: 'https://plantbaby.herokuapp.com/',
       },
