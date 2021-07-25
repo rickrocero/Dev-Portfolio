@@ -1,5 +1,5 @@
 import React from "react"
-import "@fontsource/quicksand/300.css"
+import "@fontsource/quicksand/400.css"
 
 import Navbar from '../components/Navbar'
 import Intro from '../components/Intro/intro'

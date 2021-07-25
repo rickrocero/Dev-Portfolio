@@ -1,14 +1,9 @@
 import React from 'react' 
-import { Grid, CardContent } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import * as cardStyles from './index.module.scss'
 
 const useStyles = makeStyles({
-    item: {
-        width: 600,
-        height: 600,
-        textAlign: "center"
-    },
     div: {
         direction: "row",
     }
@@ -18,12 +13,8 @@ const ProjectCard = ({ project }) => {
     const classes = useStyles();
     return (
         <Grid 
-        container 
         item xs={12} md={6} 
-        className={classes.item} 
-        direction="column" 
-        justifyContent="center" 
-        alignItems="center"
+        className={cardStyles.project}
         >
             <a>
                 <img src={project.img} alt={project.title}/>
