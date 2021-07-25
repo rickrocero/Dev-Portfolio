@@ -49,6 +49,7 @@ export const MenuLinks = styled.nav`
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 4;
     transition: transform 300ms;
     transform: ${({nav}) => (nav ? "translateX(0)": "translateX(100%)")};
 

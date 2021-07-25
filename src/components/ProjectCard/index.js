@@ -1,5 +1,5 @@
 import React from 'react' 
-import { Grid } from '@material-ui/core';
+import { Grid, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import * as cardStyles from './index.module.scss'
 
@@ -23,10 +23,10 @@ const ProjectCard = ({ project }) => {
             <p>{project.description}</p>
             <div className={classes.div}>
                 <a href={project.github} target="_blank">
-                    <button>Github</button>
+                    <Button size="small" variant="outlined">Github</Button>
                 </a>
                 <a href={project.link} target="_blank">
-                    <button>Website</button>
+                    <Button size="small"  variant="outlined">Website</Button>
                 </a> 
             </div>
             
