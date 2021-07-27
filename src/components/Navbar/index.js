@@ -28,7 +28,7 @@ const Navbar = () => {
                             <a to="#">Projects</a>
                         </li>
                         <li>
-                            <a to="#">About me</a>
+                            <a to="#">About</a>
                         </li>
                     </ul>
                 </MenuLinks>

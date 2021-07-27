@@ -3,11 +3,20 @@ import { Grid, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import * as cardStyles from './index.module.scss'
 
-const useStyles = makeStyles({
+// const useStyles = makeStyles({
+//     div: {
+//         direction: "row",
+//     }
+// });
+
+const useStyles = makeStyles((theme) => ({
+    margin: {
+      margin: theme.spacing(1),
+    },
     div: {
         direction: "row",
     }
-});
+}));
 
 const ProjectCard = ({ project }) => {
     const classes = useStyles();
@@ -26,7 +35,7 @@ const ProjectCard = ({ project }) => {
                     <Button size="small" variant="outlined">Github</Button>
                 </a>
                 <a href={project.link} target="_blank">
-                    <Button size="small"  variant="outlined">Website</Button>
+                    <Button size="small"  variant="outlined" className={classes.margin}>Website</Button>
                 </a> 
             </div>
             

@@ -1,8 +1,13 @@
-img {
-    height: auto;
-    width: 100%;
-}
-
 .project {
     padding: 55px;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    Button {
+        font-family: "Quicksand";
+        font-weight: 600;
+    }
 }
