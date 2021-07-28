@@ -2,6 +2,7 @@ import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Grid } from '@material-ui/core'
 
+import resume from '../../../static/resume.pdf'
 import * as aboutStyles from './index.module.scss'
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -18,6 +19,8 @@ const useStyles = makeStyles({
     }
   });
 
+const resumeUrl = `${resume}#navpanes=0&scrollbar=0`
+
 const About = () => {
     const classes = useStyles();
 
@@ -26,7 +29,7 @@ const About = () => {
             <div className={aboutStyles.contact}>
                 <h2>About me</h2>
                 <ul>
-                    <li>Resume &nbsp; | &nbsp;</li>
+                    <li> <a href={resumeUrl} download="Rick's Resume">Resume</a> &nbsp; | &nbsp;</li>
                     <li>rickrocero@gmail.com &nbsp; | &nbsp;</li>
                     <li>360.724.8730</li>
                 </ul>
@@ -59,7 +62,12 @@ const About = () => {
                         major, healthcare provider, and now as a developer. There is still a lot
                         more for me to learn and that's truly exciting. I'd like to join a company
                         where I can grow professionally and personally while working alongside other 
-                        ambitious people to deliver high-quality, innovative applications.</p>
+                        ambitious people to deliver high-quality, innovative applications.
+                        <br/>
+                        <br/>
+                        Thanks a bunch for stopping by! Please reach out for professional opportunities. You can
+                        find me on <a href="https://www.linkedin.com/in/rick-rocero/" target="_blank">Linkedin</a> and <a href="https://github.com/rickrocero" target="_blank">Github</a>.
+                        </p>
                     </figcaption>
             </div>
             {/* <Grid 
