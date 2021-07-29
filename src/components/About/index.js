@@ -30,8 +30,8 @@ const About = () => {
                 <h2>About me</h2>
                 <ul>
                     <li> <a href={resumeUrl} download="Rick's Resume">Resume</a> &nbsp; | &nbsp;</li>
-                    <li>rickrocero@gmail.com &nbsp; | &nbsp;</li>
-                    <li>360.724.8730</li>
+                    <li> <a href="mailto:rickrocero@gmail.com">rickrocero@gmail.com</a> &nbsp; | &nbsp;</li>
+                    <li> <a href="tel:+13607248730">360.724.8730</a></li>
                 </ul>
             </div>
             <div className={aboutStyles.about}>
@@ -54,15 +54,15 @@ const About = () => {
                         Washington University. During my senior year I worked on data analysis and
                         visualization using R and it is when I realized my deep appreciation for 
                         programming. I decided to not pursue medical school and carved a 
-                        new path for myself in the tech industry as a web developer. 
+                        new path for myself in the tech industry as a programmer. 
                         <br/>
                         <br/>
                         Working collaboratively. Creativity and critical thinking. Problem solving.  
                         Improving the lives of your customers. These are skills I've honed as a STEM 
-                        major, healthcare provider, and now as a developer. There is still a lot
+                        major, healthcare provider, and now as a developer. There is still
                         more for me to learn and that's truly exciting. I'd like to join a company
                         where I can grow professionally and personally while working alongside other 
-                        ambitious people to deliver high-quality, innovative applications.
+                        ambitious people to deliver high-quality, innovative products.
                         <br/>
                         <br/>
                         Thanks a bunch for stopping by! Please reach out for professional opportunities. You can
