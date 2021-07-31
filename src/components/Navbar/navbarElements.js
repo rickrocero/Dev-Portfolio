@@ -75,7 +75,7 @@ export const MenuLinks = styled.nav`
 export const Logo = styled.h1`
     position: fixed;
     font-size: 2rem;
-    top: -0.1rem;
+    top: 1.5rem;
     left: 1.5rem;
 `
 

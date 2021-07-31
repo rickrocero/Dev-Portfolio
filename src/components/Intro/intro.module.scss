@@ -17,3 +17,16 @@
     }
 }
 
+.bg {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+}
+
+.intro {
+    background-color: #232741;
+}

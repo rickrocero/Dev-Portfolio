@@ -3,9 +3,9 @@ import * as navbarStyles from './index.module.scss'
 import { 
     MenuIcon,
     MenuLinks,
-    Wrapper,
     Logo
 } from './navbarElements'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Navbar = () => {
 
@@ -25,10 +25,10 @@ const Navbar = () => {
                 <MenuLinks nav={nav}>
                     <ul>
                         <li>
-                            <a to="#">Projects</a>
+                            <a onClick={() => scrollTo('.projects')}>Projects</a>
                         </li>
                         <li>
-                            <a to="#">About</a>
+                            <a onClick={() => scrollTo('.about')}>About</a>
                         </li>
                     </ul>
                 </MenuLinks>

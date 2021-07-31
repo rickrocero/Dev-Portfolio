@@ -25,7 +25,7 @@ const About = () => {
     const classes = useStyles();
 
     return (
-        <section>
+        <section className="about">
             <div className={aboutStyles.contact}>
                 <h2>About me</h2>
                 <ul>
