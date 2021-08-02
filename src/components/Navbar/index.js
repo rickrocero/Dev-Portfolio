@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import * as navbarStyles from './index.module.scss'
+import './index.scss'
 import { 
     MenuIcon,
     MenuLinks,
@@ -10,11 +10,18 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 const Navbar = () => {
 
     const [nav, showNav] = useState(false)
+    const closeMenu = () => {
+        showNav(false);
+    }
 
     return (
         <header>
-            <nav className={navbarStyles.nav}>
-                <Logo>R</Logo>
+            <nav className="nav">
+                <a onClick={() => scrollTo('.intro')}>
+                    <Logo>
+                        R
+                    </Logo>
+                </a>
                 <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
                     <div />
                     <div />
@@ -24,11 +31,15 @@ const Navbar = () => {
             <div>
                 <MenuLinks nav={nav}>
                     <ul>
-                        <li>
-                            <a onClick={() => scrollTo('.projects')}>Projects</a>
+                        <li onClick={() => closeMenu()}>
+                            <a onClick={() => scrollTo('.projects')}>
+                                Projects
+                            </a>
                         </li>
-                        <li>
-                            <a onClick={() => scrollTo('.about')}>About</a>
+                        <li onClick={() => closeMenu()}>
+                            <a onClick={() => scrollTo('.about')}>
+                                About
+                            </a>
                         </li>
                     </ul>
                 </MenuLinks>
