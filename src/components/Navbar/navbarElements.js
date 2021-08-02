@@ -77,5 +77,6 @@ export const Logo = styled.h1`
     font-size: 2rem;
     top: 1.5rem;
     left: 1.5rem;
+    z-index: 4;
 `
 

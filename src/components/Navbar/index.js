@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const [nav, showNav] = useState(false)
     const closeMenu = () => {
-        showNav(false);
+        showNav(false)
     }
 
     return (
