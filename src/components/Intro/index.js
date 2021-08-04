@@ -17,16 +17,14 @@ const Intro = () => {
         <section className="intro">
             <Particles params={particlesConfig} className="bg"/>
             <div className="greeting">
-                    <div>
-                        <h1>Hi, I'm Rick.<br/>As a JavaScript Developer,<br/>I design and build intuitive full-stack web apps.</h1>
-                    </div>
-                    <Button size="medium" variant="outlined" onClick={() => scrollTo('.projects')}>
-                        &#60; View Portfolio  &#47;&#62;
-                    </Button>
+                <div>
+                    <h1>Hi, I'm <span className="author">Rick Rocero</span>.<br/>As a <span className="dev">JavaScript Developer</span>,<br/>I design and build intuitive full-stack web apps.</h1>
+                </div>
+                <Button size="medium" variant="outlined" onClick={() => scrollTo('.projects')}>
+                    &#60; View Portfolio  &#47;&#62;
+                </Button>
             </div>
         </section>
-       
-        
     )
 }
 

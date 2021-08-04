@@ -1,7 +1,7 @@
 import React from 'react' 
 import { Grid, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import * as cardStyles from './index.module.scss'
+import './index.scss'
 
 // const useStyles = makeStyles({
 //     div: {
@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
     return (
         <Grid 
         item xs={12} md={6} 
-        className={cardStyles.project}
+        className="project"
         >
             <a>
                 <img src={project.img} alt={project.title}/>

@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Grid } from '@material-ui/core'
 
 import resume from '../../../static/resume.pdf'
-import * as aboutStyles from './index.module.scss'
+import './index.scss'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -26,7 +26,7 @@ const About = () => {
 
     return (
         <section className="about">
-            <div className={aboutStyles.contact}>
+            <div className="contact">
                 <h2>About me</h2>
                 <ul>
                     <li> <a href={resumeUrl} download="Rick's Resume">Resume</a> &nbsp; | &nbsp;</li>
@@ -34,19 +34,17 @@ const About = () => {
                     <li> <a href="tel:+13607248730">360.724.8730</a></li>
                 </ul>
             </div>
-            <div className={aboutStyles.about}>
+            <div className="bio">
                 <figure>
                     <StaticImage 
                     src="../../../static/headshot.jpg" 
-                    layout="fixed"
-                    width={400}
-                    height={400}/>
+                    className="headshot"/>
                 </figure>
                 <figcaption>
                     <p>I'm a certified full-stack developer based in beautiful Bellingham,
                         Washington. Each day I bring my persistant desire to learn, passion
                         for coding, and the goal of improving the well-being of others through
-                        my work, to engineer captivating web applications. I focus on a mobile-first 
+                        my work, to engineer captivating web applications. I focus on a mobile-responsive 
                         frontend design alongside a robust backend and a scalabale database.
                         <br/>
                         <br/>

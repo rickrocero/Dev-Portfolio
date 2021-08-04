@@ -9,6 +9,19 @@
         text-align: center;
         line-height: 1.5;
         font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: clamp(1rem, 10vw, 2rem); 
+    }
+
+    .author {
+        color: #d7d7d7;
+    }
+
+    .dev {
+        color: #f7df1e;
     }
 
     Button {
@@ -24,9 +37,6 @@
   left: 0px;
   bottom: 0px;
   right: 0px;
-  z-index: 0;
-}
-
-.intro {
-    background-color: #232741;
+  z-index: -5;
+  background-color: #232741;
 }
