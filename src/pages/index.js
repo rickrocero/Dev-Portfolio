@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Intro from '../components/Intro'
 import ProjectContainer from '../components/ProjectContainer'
 import Footer from '../components/Footer'
-import About from '../components/about'
+import About from '../components/About'
 import Head from '../components/Head'
 import './index.scss'
 
@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Head />
       <Navbar />
       <Intro />
-      <ProjectContainer title="Projects"/>
+      <ProjectContainer title="Projects" />
       <About title="About" />
       <Footer />
     </>
