@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     },
     div: {
         direction: "row",
+        paddingTop: '0.5rem'
     }
 }));
 
