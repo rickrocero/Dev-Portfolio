@@ -1,9 +1,7 @@
 import React from "react"
 import "@fontsource/quicksand/400.css"
 
-// import Navbar from '../components/Navbar'
-import Navbar from '../components/Navbar/navbar'
-import NavMenu from "../components/NavMenu"
+import Navbar from '../components/Navbar'
 import Intro from '../components/Intro'
 import ProjectContainer from '../components/ProjectContainer'
 import Footer from '../components/Footer'
@@ -15,9 +13,7 @@ const IndexPage = () => {
   return (
     <>
       <Head />
-      {/* <Navbar /> */}
       <Navbar />
-      {/* <NavMenu /> */}
       <Intro />
       <ProjectContainer title="Projects"/>
       <About title="About" />

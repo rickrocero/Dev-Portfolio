@@ -6,7 +6,6 @@ export const FooterWrapper = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    // bottom: 0;
     background-color: #DCDCDC;
 `
 

@@ -1,90 +1,70 @@
-import React, {useState, useEffect} from 'react'
-import './index.scss'
-import { 
-    Nav,
-    MenuIcon,
-    MenuLinks,
-    Logo,
-    NavbarContainer
-} from './navbarElements'
+import React, { useState, useEffect } from 'react'
+
+import { Nav, NavbarContainer, NavLogo, MenuIcon, MenuLinks } from './navbarElements'
 import scrollTo from 'gatsby-plugin-smoothscroll'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Navbar = () => {
 
-    const [nav, showNav] = useState(false)
+    const [menu, setMenu] = useState(false)
+
     const closeMenu = () => {
-        showNav(false)
+        setMenu(false)
     }
-    // const [navbar, setNavbar] = useState(false);
 
-    // const changeBackground = () => {
-    //     if (window.scrollY >= 80) {
-    //         setNavbar(true)
-    //     } else {
-    //         setNavbar(false)
-    //     }
-    // };
+    const navHome = () => {
+        closeMenu(false)
+        scrollTo('.intro')
+    }
 
-    // window.addEventListener('scroll', changeBackground);
+    const [scrollNav, setScrollNav] = useState(false);
+    
+    const changeNav = () => {
+        if(window.scrollY >= 80) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    }
 
-    // const [scrollNav, setScrollNav] = useState(false);
-    // const changeNav = () => {
-    //     if(window.scrollY >= 80) {
-    //         setScrollNav(true);
-    //     } else {
-    //         setScrollNav(false);
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     window.addEventListener('scroll', changeNav)
-    // },[])
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    },[])
 
     return (
         <>
-            <Nav>
+            <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <Logo onClick={() => scrollTo('.intro')}>
+                    <NavLogo onClick={navHome}>
                         R
-                    </Logo>
-                    <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
+                    </NavLogo>
+                    <MenuIcon menu={menu} onClick={() => setMenu(!menu)}>
                         <div />
                         <div />
                         <div />
                     </MenuIcon>
                 </NavbarContainer>
             </Nav>
-            <div>
-                <MenuLinks nav={nav}>
-                    <ul>
-                        <li onClick={() => closeMenu()}>
-                            <a onClick={() => scrollTo('.projects')}>
-                                Projects
-                            </a>
-                        </li>
-                        <li onClick={() => closeMenu()}>
-                            <a onClick={() => scrollTo('.about')}>
-                                About
-                            </a>
-                        </li>
-                    </ul>
-                </MenuLinks>
-            </div>
+            <MenuLinks menu={menu}>
+                <ul>
+                    <li>
+                        <AnchorLink 
+                        to='/#projects'
+                        onAnchorLinkClick={() => setMenu(!menu)}>
+                            Projects
+                        </AnchorLink>
+                    </li>
+                    <li>
+                        <AnchorLink 
+                        to='/#about'
+                        onAnchorLinkClick={() => setMenu(!menu)}>
+                            About
+                        </AnchorLink>
+                    </li>
+                </ul>
+            </MenuLinks>
         </>
     )
 }
 
 export default Navbar
-
-// return (
-//     <header>
-//         <nav>
-//             <h1 className={navbarStyles.logo}>R</h1>
-//             <ul className={navbarStyles.navList}>
-//                 <li className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem}>Work</li>
-//                 <li className={navbarStyles.navItem} activeClassName={navbarStyles.activeNavItem}>About</li>
-//             </ul>
-//         </nav>
-//     </header>
-    
-// )

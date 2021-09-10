@@ -12,8 +12,6 @@
 
     ul {
         display: flex;
-        // justify-content: center;
-        // align-items: center;
     }
 
     li {
@@ -44,15 +42,6 @@
     }
 }
 
-// .bio {
-
-//     p {
-//         margin-top: -4px;
-//     }
-    
-// }
-
-
 .headshot {
     width: 300px;
     height: 350px;
@@ -63,13 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    // padding-left: 210px;
-    // padding-right: 255px;
-    // padding-top: 15px;
     padding: 4% 11% 3% 11%;
-    // padding-top: 4%;
-    // padding-bottom: 5%;
-    // padding: 2rem 11rem 3rem 11rem;
     font-weight: 600;
 
     .titleSpacing {
@@ -87,9 +70,6 @@
 
     figcaption {
         padding-left: 2rem;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
     }
 
     @media (max-width: 960px) {
