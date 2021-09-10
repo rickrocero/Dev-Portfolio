@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Dev-Portfolio",
+    title: "Rick Rocero | Full-Stack Developer",
     author: "Rick Rocero",
     projects: [
       {
@@ -41,6 +41,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-smoothscroll',
+    'gatsby-plugin-react-helmet',
     {
       resolve: "gatsby-source-filesystem",
       options: {

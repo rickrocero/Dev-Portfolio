@@ -8,11 +8,13 @@ import Intro from '../components/Intro'
 import ProjectContainer from '../components/ProjectContainer'
 import Footer from '../components/Footer'
 import About from '../components/about'
+import Head from '../components/Head'
 import './index.scss'
 
 const IndexPage = () => {
   return (
     <>
+      <Head />
       {/* <Navbar /> */}
       <Navbar />
       {/* <NavMenu /> */}
