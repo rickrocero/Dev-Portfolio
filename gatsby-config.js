@@ -28,7 +28,7 @@ module.exports = {
       {
         title: 'Developer Portfolio',
         description: 'My professional portfolio',
-        img: '/food-bev-logo.png',
+        img: '/DevPortfolio.gif',
         github: 'https://github.com/rickrocero/Dev-Portfolio',
         link: '',
       },
@@ -48,6 +48,12 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -80
+      }
     },
   ],
 };

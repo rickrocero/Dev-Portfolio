@@ -1,13 +1,7 @@
 import React from 'react' 
 import { Grid, Button } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import './index.scss'
-
-// const useStyles = makeStyles({
-//     div: {
-//         direction: "row",
-//     }
-// });
 
 const useStyles = makeStyles((theme) => ({
     margin: {
@@ -17,6 +11,24 @@ const useStyles = makeStyles((theme) => ({
         direction: "row",
     }
 }));
+
+const GithubBtn = withStyles({
+    root: {
+      background: '#069390',
+      border: 0,
+      color: '#000',
+    //   opacity: 0.75,
+      fontSize: '0.9em',
+      transition: "background 300ms, border 300ms, borderColor 300ms, boxShadow 300ms",
+      '&:hover': {
+        background: 'transparent',
+        boxShadow: '0 0 5px 3px #069390',
+        border: 1,
+        borderColor: '#069390',
+        // opacity: 1
+      }
+    },
+})(Button);
 
 const ProjectCard = ({ project }) => {
     const classes = useStyles();
@@ -32,11 +44,11 @@ const ProjectCard = ({ project }) => {
             <p>{project.description}</p>
             <div className={classes.div}>
                 <a href={project.github} target="_blank">
-                    <Button size="small" variant="outlined">Github</Button>
+                    <GithubBtn size="small" variant="outlined">Github</GithubBtn>
                 </a>
-                <a href={project.link} target="_blank">
+                {/* <a href={project.link} target="_blank">
                     <Button size="small"  variant="outlined" className={classes.margin}>Website</Button>
-                </a> 
+                </a>  */}
             </div>
             
             {/* <Card className={classes.root}>

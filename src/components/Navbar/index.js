@@ -1,9 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './index.scss'
 import { 
+    Nav,
     MenuIcon,
     MenuLinks,
-    Logo
+    Logo,
+    NavbarContainer
 } from './navbarElements'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
@@ -13,21 +15,45 @@ const Navbar = () => {
     const closeMenu = () => {
         showNav(false)
     }
+    // const [navbar, setNavbar] = useState(false);
+
+    // const changeBackground = () => {
+    //     if (window.scrollY >= 80) {
+    //         setNavbar(true)
+    //     } else {
+    //         setNavbar(false)
+    //     }
+    // };
+
+    // window.addEventListener('scroll', changeBackground);
+
+    // const [scrollNav, setScrollNav] = useState(false);
+    // const changeNav = () => {
+    //     if(window.scrollY >= 80) {
+    //         setScrollNav(true);
+    //     } else {
+    //         setScrollNav(false);
+    //     }
+    // }
+
+    // useEffect(() => {
+    //     window.addEventListener('scroll', changeNav)
+    // },[])
 
     return (
-        <header>
-            <nav className="nav">
-                <a onClick={() => scrollTo('.intro')}>
-                    <Logo>
+        <>
+            <Nav>
+                <NavbarContainer>
+                    <Logo onClick={() => scrollTo('.intro')}>
                         R
                     </Logo>
-                </a>
-                <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
-                    <div />
-                    <div />
-                    <div />
-                </MenuIcon>
-            </nav>
+                    <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
+                        <div />
+                        <div />
+                        <div />
+                    </MenuIcon>
+                </NavbarContainer>
+            </Nav>
             <div>
                 <MenuLinks nav={nav}>
                     <ul>
@@ -44,7 +70,7 @@ const Navbar = () => {
                     </ul>
                 </MenuLinks>
             </div>
-        </header>
+        </>
     )
 }
 

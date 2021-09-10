@@ -5,14 +5,25 @@
 // }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: transparent;
+    height: 80px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    // padding: 1.45rem 2vw;
 
-    a:hover {
+    li:hover {
         cursor: pointer;
     }
 }
+
+
+// .nav.active {
+//     background: #140a42;
+// }
 
 // .nav-container {
 //     display: flex;

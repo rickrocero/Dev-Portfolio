@@ -18,6 +18,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const ProjectContainer = () => {
     // const classes = useStyles();
 
+
     const projectData = useStaticQuery(graphql`
     query {
         site {
@@ -35,16 +36,20 @@ const ProjectContainer = () => {
     `)
 
     return (
-        <Grid 
-        container
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        // className={classes.container}
-        className="projects"
-        >
-        {projectData.site.siteMetadata.projects.map(projectObj => <ProjectCard project={projectObj}/>)}
-        </Grid>
+        <>
+        <section id="projects" className="projects">
+            <h2>My Recent Work</h2>
+            <Grid 
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            // className={classes.container}
+            >
+            {projectData.site.siteMetadata.projects.map(projectObj => <ProjectCard project={projectObj}/>)}
+            </Grid>
+        </section>
+        </>
     )
 }
 
