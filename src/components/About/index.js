@@ -24,6 +24,7 @@ const About = () => {
                     className="headshot" 
                     src="../../../static/headshot.jpg"
                     alt='Selfie' 
+                    loading='lazy'
                     />
                 </figure>
                 <figcaption>

@@ -34,6 +34,8 @@ const Intro = () => {
                     className="avatar" 
                     src="../../../static/Avatar2.png"
                     alt='Avatar'
+                    loading='eager'
+                    placeholder='blurred'
                     />
                 <div>
                     <h1>Hello and welcome! I'm <span className="highlight">Rick Rocero</span>.</h1>

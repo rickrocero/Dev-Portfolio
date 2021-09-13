@@ -5,6 +5,13 @@ module.exports = {
     author: "Rick Rocero",
     projects: [
       {
+        title: 'Food & Bev',
+        description: 'A recipe buddy for meals and cocktails',
+        img: '/FoodBev.gif',
+        github: 'https://github.com/rickrocero/Food-Bev',
+        link: 'https://moecory11.github.io/food-bev/',
+      },
+      {
         title: 'Pantrimonium',
         description: 'Track the groceries in your fridge, freezer, & pantry',
         img: '/Pantrimonium.gif',
@@ -13,21 +20,14 @@ module.exports = {
       },
       {
         title: 'Plant Baby',
-        description: 'Classified website devoted to house plants',
+        description: 'Classified website devoted to indoor plants',
         img: '/PlantBaby.gif',
         github: 'https://github.com/rickrocero/Plant-Baby-Frontend',
         link: 'https://plantbaby.herokuapp.com/',
       },
       {
-        title: 'Food & Bev',
-        description: 'A recipe buddy for meals and cocktails',
-        img: '/FoodBev.gif',
-        github: 'https://github.com/rickrocero/Food-Bev',
-        link: 'https://moecory11.github.io/food-bev/',
-      },
-      {
         title: 'Developer Portfolio',
-        description: 'My professional portfolio',
+        description: 'My personal portfolio',
         img: '/DevPortfolio.gif',
         github: 'https://github.com/rickrocero/Dev-Portfolio',
         link: '',
