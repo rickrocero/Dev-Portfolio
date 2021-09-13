@@ -12,7 +12,7 @@
 My personal portfolio website
 
 ## Preview
-![preview](./public/DevPortfolio.gif)
+![preview](./static/DevPortfolio.gif)
 
 ## Link
 https://rickrocero.com/
