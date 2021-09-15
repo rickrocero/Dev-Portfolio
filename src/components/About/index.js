@@ -55,7 +55,7 @@ const About = () => {
                     <br />
                     <h3 className='titleSpacing'>Connect with me</h3>
                     <p>
-                        Please reach out for professional opportunities. Thank you for passing by!
+                        Please contact me for professional opportunities. Visit my <a href="https://www.linkedin.com/in/rick-rocero/">LinkedIn.</a> Thank you for passing by!
                     </p>
                 </figcaption>
             </div>
