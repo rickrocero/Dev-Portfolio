@@ -37,13 +37,16 @@ const ProjectCard = ({ project, keys }) => {
         className="project"
         key={keys}
         >
-            <a>
+            {/* <a>
                 <img src={project.img} alt={project.title}/>
-            </a>
+            </a> */}
+            <video autoPlay loop muted playsInline className="gif">
+                <source src={project.img} type="video/mp4" />
+            </video>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className={classes.div}>
-                <a href={project.github} target="_blank">
+                <a href={project.github} target="_blank" rel="noreferrer">
                     <GithubBtn size="small" variant="outlined">Github</GithubBtn>
                 </a>
             </div>

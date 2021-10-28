@@ -25,11 +25,11 @@ const Footer = () => {
                 <div className='socials'>
                     <div>
                         <StaticImage className='icon' src='../../../static/linkedin.png' alt='LinkedIn icon' width={20} height={20} objectFit='contain' />
-                        <a href="https://www.linkedin.com/in/rick-rocero/" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/rick-rocero/" target="_blank" rel="noreferrer">LinkedIn</a>
                     </div>
                     <div>
                         <StaticImage className='icon' src='../../../static/github.png' alt='GitHub icon' width={20} height={20} objectFit='contain' />
-                        <a href="https://github.com/rickrocero" target="_blank">GitHub</a>
+                        <a href="https://github.com/rickrocero" target="_blank" rel="noreferrer">GitHub</a>
                     </div>    
                 </div>
             </FooterContainer>
